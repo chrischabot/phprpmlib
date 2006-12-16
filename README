@@ -1,0 +1,19 @@
+phpRPMlib 1.0 (C) Chris Chabot 2005-2006
+Released under the GPLv2, See LICENCE for more information.
+
+This is a RPM binary format reader implementation written
+in PHP as a proof of concept, and as study project.
+
+This library contains:
+
+RPMDefines.php   : RPM tag type and constants definitions
+RPMIO.php        : Used to read the RPM header information, and interpret its 
+                   binary types propery
+RPMLead.php      : Reads in the RPM lead information (mostly depreciated info, 
+                   use header info instead)
+RPMSignature.php : Reads the signature of the RPM
+RPMIndex.php     : RPM index reading & parsing
+RPMIndexEntry    : Class instanced by RPMIndex
+RPMHeader.php    : RPM Header reading & parsing
+RPM.php          : demo file, change /path/to/some/file.rpm to a real rpm file,
+                   and run to see all the info collected
